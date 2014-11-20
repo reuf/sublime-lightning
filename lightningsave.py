@@ -53,7 +53,7 @@ class Helper(sublime_plugin.WindowCommand):
         else:
             self.window.run_command(
                 'exec',
-                {'cmd': ["force", "fetch", "-t", "aura", "-m", bundle, "-d", adir],
+                {'cmd': ["force", "fetch", "-t", "aura", "-n", bundle, "-d", adir],
                 'working_dir': adir})
 
         return
